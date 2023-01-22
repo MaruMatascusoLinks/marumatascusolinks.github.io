@@ -25,9 +25,9 @@ header a{
     margin-bottom: 10px;
     text-decoration: none;
 }
-/*a:link{
+a:link{
     color: inherit;
-}*/
+}
 a:visited{
     color: inherit;
 }
@@ -45,9 +45,11 @@ header nav div{
     height: 35px;
     opacity: 0.75;
 }
+.textbox{
+    width: 500px;
+    margin: auto;
+}
 section p{
-    margin-left: 400px;
-    margin-right: 400px;
     text-align: center;
 }
 hr{
