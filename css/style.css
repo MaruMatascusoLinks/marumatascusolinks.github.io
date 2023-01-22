@@ -1,7 +1,8 @@
 /*  Fuente descripción: font-family: 'Open Sans', sans-serif; 
     Fuente botonera: font-family: 'Source Code Pro', monospace;
-    color tipogragía: 
-    color background: #F9C53E; 
+    color tipogragía: #424242
+    color background: #F9C53E
+    color botones: #eeeeee
 */
 
 body{
@@ -26,10 +27,10 @@ header a{
     text-decoration: none;
 }
 a:link{
-    color: inherit;
+    color: #424242;
 }
 a:visited{
-    color: inherit;
+    color: #424242;
 }
 header nav div{
     text-align: center;
@@ -46,7 +47,7 @@ header nav div{
     opacity: 0.75;
 }
 .textbox{
-    width: 500px;
+    width: 300px;
     margin: auto;
 }
 section p{
