@@ -1,12 +1,11 @@
-header{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/*<!  Fuente descripción: font-family: 'Open Sans', sans-serif; 
+    Fuente botonera: font-family: 'Source Code Pro', monospace;
+    color tipogragía: 
+    color background: #F9C53E; 
+>*/
+body{
+    background-color: #F9C53E;
 }
-
-section{
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+header img{
+    filter: drop-shadow(-16px 16px 0px black);
 }
