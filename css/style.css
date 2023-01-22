@@ -64,16 +64,20 @@ div ul li a{
 	padding: 10px;
 	font-family: 'Source Code Pro', monospace;
 	border: solid 2px black;
-	border-radius: 3px;
+    /*border-left: solid 5px black;
+    border-bottom:solid 5px black;*/
+	border-radius: 1px;
     margin-top: 30px;
     margin-bottom: 30px;
     background-color: #eeeeee;
     text-decoration: none;
+    box-shadow: -4px 4px;
 }
 div ul li{
     text-align: center;
     list-style: none;
     margin-bottom: 40px;
+
 }
 div ul li:nth-child(1){
     margin-top: 30px;
