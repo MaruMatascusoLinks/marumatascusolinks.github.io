@@ -8,14 +8,14 @@
 body{
     background-color: #F9C53E;
     font-family: 'Open Sans', sans-serif; 
-    font-size: 11px;
+    font-size: 12px;
     color: #424242;
 }
 #perfil {
     filter: drop-shadow(-3px 5px 0px black);
     display: block;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 20px;
     box-sizing: border-box;
     width: 140px;
     height: 140px;
