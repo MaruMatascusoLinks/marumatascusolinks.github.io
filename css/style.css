@@ -8,22 +8,23 @@
 body{
     background-color: #F9C53E;
     font-family: 'Open Sans', sans-serif; 
+    font-size: 11px;
     color: #424242;
 }
 #perfil {
     filter: drop-shadow(-3px 5px 0px black);
     display: block;
     margin: auto;
-    margin-top: 70px;
+    margin-top: 50px;
     box-sizing: border-box;
-    width: 170px;
-    height: 170px;
+    width: 140px;
+    height: 140px;
 }
 header a{
     display: block;
     text-align: center;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     text-decoration: none;
 }
 a:link{
@@ -42,13 +43,14 @@ header nav div{
 }
 
 .card img{
-    width: 35px;
-    height: 35px;
+    width: 28px;
+    height: 28px;
     opacity: 0.75;
 }
 .textbox{
     width: 300px;
     margin: auto;
+    margin-top: 5px;
 }
 section p{
     text-align: center;
@@ -67,14 +69,12 @@ div ul li a{
 	padding: 10px;
 	font-family: 'Source Code Pro', monospace;
 	border: solid 2px black;
-    /*border-left: solid 5px black;
-    border-bottom:solid 5px black;*/
 	border-radius: 1px;
     margin-top: 30px;
     margin-bottom: 30px;
     background-color: #eeeeee;
     text-decoration: none;
-    box-shadow: -4px 4px;
+    box-shadow: -4px 4px black;
 }
 div ul li{
     text-align: center;
