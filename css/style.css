@@ -76,10 +76,13 @@ div ul li a{
     text-decoration: none;
     box-shadow: -4px 4px black;
 }
+div ul{
+    align-items: center;
+}
 div ul li{
     text-align: center;
     list-style: none;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 
 }
 div ul li:nth-child(1){
