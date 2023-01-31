@@ -2,7 +2,7 @@
     Fuente botonera: font-family: 'Source Code Pro', monospace;
     color tipogragía: #424242
     color background: #F9C53E
-    color background links: #ff46c6
+    color background links: ##ff96f5
     color botones: #eeeeee
 */
 
@@ -14,7 +14,7 @@ body{
 }
 
 .links{
-    background-color: #ff46c6;
+    background-color: #ff96f5;
     font-family: 'Open Sans', sans-serif; 
     font-size: 11px;
     color: #424242;
@@ -68,6 +68,10 @@ header nav div{
 section p{
     text-align: center;
 }
+
+section h1{
+    text-align: center;
+}
 hr{
     color: #333;
     height: 1px;
@@ -91,12 +95,12 @@ div ul li a{
 }
 div ul{
     align-items: center;
+    margin-left: 0px;
 }
 div ul li{
     text-align: center;
     list-style: none;
     margin-bottom: 30px;
-
 }
 div ul li:nth-child(1){
     margin-top: 30px;
