@@ -2,6 +2,7 @@
     Fuente botonera: font-family: 'Source Code Pro', monospace;
     color tipogragía: #424242
     color background: #F9C53E
+    color background links: #ff46c6
     color botones: #eeeeee
 */
 
@@ -11,6 +12,14 @@ body{
     font-size: 11px;
     color: #424242;
 }
+
+.links{
+    background-color: #ff46c6;
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 11px;
+    color: #424242;
+}
+
 #perfil {
     filter: drop-shadow(-3px 5px 0px black);
     display: block;
