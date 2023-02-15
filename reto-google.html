@@ -26,8 +26,27 @@
                 <a href="https://www.google.com.ar/imghp?hl=es&authuser=0&ogbl">Imágenes</a>
             </div>
             <div>
-                <a href=""><img class="appsimg" src="images-reto1/icons/menu.png" alt="Google Apps"></a>
+                <a href="#"><img class="i-choco" id="btn-choco" src="images-reto1/icons/menu.png" alt="Google Apps"></a>
             </div>
+            <div class="choco-menu" id="choco-menu">
+                <ul class="choco-ul">
+                    <li class="choco-li">
+                        <a href="https://myaccount.google.com/?utm_source=OGB&utm_medium=app"><img class="choco-icons" src="images-reto1/icons/marumail-circle.png" alt="Cuenta"></a>
+                        <p>Cuenta</p>
+                    </li>
+        
+                    <li class="choco-li">
+                        <a href="https://www.google.com.ar/webhp?authuser=0"><img class="choco-icons" src="images-reto1/icons/search.png" alt="Búsqueda"></a>
+                        <p>Búsqueda</p>
+                    </li>
+        
+                    <li class="choco-li">
+                        <a href="https://www.google.com.ar›maps› preview"><img class="choco-icons" src="images-reto1/icons/google-maps.png" alt="Maps"></a>
+                        <p>Maps</p>
+                    </li>
+                </ul>
+            </div>
+
             <div>
                 <a href=""><img class="roundimg" src="images-reto1/icons/marumail.jpeg" alt="Menú personal"></a>
             </div>
@@ -56,7 +75,6 @@
         </section>
     </main>
     
-
     <footer>
 
     <section> 
@@ -79,5 +97,13 @@
     </section>
     </footer>
 
+    <script>
+        let btn = document.getElementById('btn-choco')
+        let choco = document.getElementById('choco-menu')
+
+        btn.addEventListener('click', () => {
+        choco.classList.toggle('active')
+        })
+    </script>
 </body>
 </html>

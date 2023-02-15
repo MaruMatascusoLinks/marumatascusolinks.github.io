@@ -1,11 +1,10 @@
-/*  Fuente general: font-family: 'Arial', sans-serif; 
+/*  Fuente general: font-family: Roboto,'Arial', sans-serif; 
     color tipogragía: #424242
     color background body: #202124
     color barras bottom: #181718
     color hover busqueda y botones: #303134
     color font header y botones: eeeeee
     color font footer: #6F6F73
-
 */
 
 *{
@@ -17,7 +16,8 @@
 body{
     background-color: #202124;
     font-size: 14px;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto','Arial', sans-serif;
+    letter-spacing: 0.09px;
 }
 
 header{
@@ -45,19 +45,70 @@ a:hover{
 
 
 /* Icono de apps*/
-.appsimg{
+.i-choco{
     box-sizing: border-box;
     padding:8px;
     margin-left:10px;
     margin-right: 5px;
     width: 32px;
     height: 32px;
-    /*border-radius: 50%;*/
+    border-radius: 10px;
 }
-a img:hover{
+
+a img.i-choco:hover{
     background-color: #424242 ;
     pointer-events: painted;
 }
+
+.choco-menu{
+border-radius: 10px;
+box-shadow: -1px -1px 5px rgba(0, 0, 0,0.5);
+position: absolute;
+top: 48px;
+right: 10px;
+padding: 12px;
+width: 328px;
+height: 400px;
+background-color: #333438;
+display: none;
+justify-content: space-between;
+}
+
+.choco-menu.active {
+display: block;
+}
+
+.choco-icons{
+height: 50px;
+width: 50px;
+}
+
+.choco-ul{
+list-style: none;
+}
+
+.choco-li{
+display: inline-block;
+list-style: none;
+color: #eeeeee;
+text-align: center;
+}
+
+a .choco-li:hover{
+background-color: #424242 ;
+pointer-events: painted;
+}
+
+/* VER 
+nav a:link, nav a:visited {
+display: inline-block;
+width: 24px;
+color:rgba(255,255,255,0.87);
+padding: 10px;
+} */
+
+
+
 
 /* Icono de email*/
 .roundimg{
@@ -193,7 +244,7 @@ footer section{
     align-items: center;
     height: 50%;
     color: #aaacaf;
-    background-color: #000000;
+    background-color: #151515;
 }
 
 footer section.useful-info{
