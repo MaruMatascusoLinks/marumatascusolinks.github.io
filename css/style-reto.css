@@ -91,8 +91,11 @@ list-style: none;
 display: inline-block;
 list-style: none;
 color: #eeeeee;
-text-align: center;
 }
+
+.choco-li p{
+    text-align: center;
+    }
 
 a .choco-li:hover{
 background-color: #424242 ;

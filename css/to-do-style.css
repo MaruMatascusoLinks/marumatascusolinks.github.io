@@ -1,0 +1,68 @@
+/* 
+Font: Josefin Sans: font-family: 'Josefin Sans', sans-serif;
+Color tipografía e íconos: #A84DFF
+Color 
+*/
+
+html{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+header{
+    height: 10vh;
+}
+
+footer{
+    height: 10vh;
+}
+
+nav{
+    margin-top: 40px;    
+}
+
+.menu{
+    border: none;
+    margin-top: 10px;
+    margin-left: 40px;
+    background-color: transparent;
+}
+.list-group-item.active{
+        z-index: 2;
+        color: var(--bs-list-group-active-color);
+        background-color: rgb(245, 245, 245);
+        border-color: #A84DFF;
+        color: #A84DFF;
+        font-size: 28px;
+        border-width: 2px;
+        text-align: center;
+        width: 270px;
+        display: block;
+        margin: 0 auto;
+    }
+
+.bienvenida{
+    display: block;
+    margin: 0 auto;
+    width: 270px;
+    margin-top: 30px;
+}
+
+.container-bienvenida{
+    height: 70vh;
+}
+
+.msj-bienvenida{
+    font-size: 24px;
+    color: #A84DFF;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.plus{
+    border: none;
+    margin-top: 10px;
+    background-color: transparent;
+    text-align: right;
+    margin-left: 10px;
+}
+
