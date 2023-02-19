@@ -9,60 +9,66 @@ html{
 }
 
 header{
-    height: 10vh;
+    height: 20vh;
 }
 
 footer{
-    height: 10vh;
+    height: 20vh;
 }
 
 nav{
-    margin-top: 40px;    
+    margin-top: 50px;    
 }
 
 .menu{
     border: none;
     margin-top: 10px;
-    margin-left: 40px;
     background-color: transparent;
+    padding-left: 20px;
+    float: right;
 }
+
+
 .list-group-item.active{
         z-index: 2;
         color: var(--bs-list-group-active-color);
         background-color: rgb(245, 245, 245);
         border-color: #A84DFF;
         color: #A84DFF;
-        font-size: 28px;
-        border-width: 2px;
+        font-size: 20px;
+        border-width: 4px;
         text-align: center;
-        width: 270px;
+        width: 20vh;
         display: block;
-        margin: 0 auto;
+        margin:0 auto;
     }
 
 .bienvenida{
     display: block;
     margin: 0 auto;
-    width: 270px;
-    margin-top: 30px;
+    width: 20vh;
+    margin-top: 60px;
 }
 
 .container-bienvenida{
-    height: 70vh;
+    height: 60vh;
 }
 
 .msj-bienvenida{
-    font-size: 24px;
+    font-size: 20px;
     color: #A84DFF;
     text-align: center;
     margin-top: 20px;
 }
 
-.plus{
+.plus-img{
     border: none;
     margin-top: 10px;
     background-color: transparent;
-    text-align: right;
-    margin-left: 10px;
+    float: left;
 }
+/*.plus{
+    display: flex;
+    justify-content: end;
+}*/
 
