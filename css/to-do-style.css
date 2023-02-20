@@ -4,18 +4,21 @@ Color tipografía e íconos: #A84DFF
 Color 
 */
 
-html{
+body{
     font-family: 'Josefin Sans', sans-serif;
+    font-size: 12px;
 }
 
 header{
     height: 20vh;
+    
 }
 
 footer{
     height: 20vh;
+    
 }
-
+/* --------- NAV ------------ */
 nav{
     margin-top: 50px;    
 }
@@ -28,30 +31,34 @@ nav{
     float: right;
 }
 
+.titulo{
+    background-color: white;
+    padding: 10px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #A84DFF;
+    color: #A84DFF;
+    font-size: 20px;
+    border-width: 3.5px;
+    text-align: center;
+    display: block;
+    margin:0 auto;
+}
 
-.list-group-item.active{
-        z-index: 2;
-        color: var(--bs-list-group-active-color);
-        background-color: rgb(245, 245, 245);
-        border-color: #A84DFF;
-        color: #A84DFF;
-        font-size: 20px;
-        border-width: 4px;
-        text-align: center;
-        width: 20vh;
-        display: block;
-        margin:0 auto;
-    }
-
+/* ------------ CSS BIENVENIDA ----------- */
 .bienvenida{
     display: block;
     margin: 0 auto;
-    width: 20vh;
+    width: 150px;
     margin-top: 60px;
 }
 
 .container-bienvenida{
     height: 60vh;
+}
+
+.container-bienvenida.inactive{
+    display: none;
 }
 
 .msj-bienvenida{
@@ -61,14 +68,99 @@ nav{
     margin-top: 20px;
 }
 
+
+/* ------------ CSS TASK LIST ----------- */
+
+.container-input{
+    display: none;
+    height: 60vh;
+}
+
+/*.container-input.active{
+    display: block;
+}
+.container-input.inactive{
+    display: none;
+} */
+
+
+.list-group-item.active{
+    background-color: #A84DFF;
+    border-style: none;
+    font-size: 18px;
+}
+
+.btn.btn-primary{
+    float: right;
+    background-color: #A84DFF;
+    border-style: none;
+    font-size: 18px;
+}
+
+/* ------------ CSS NEW TASK ----------- */
+
+.container-newtask{
+    display: none;
+}
+
+.container-newtask.active{
+    display: block;
+}
+
+.container-newtask.inactive{
+    display: none;
+}
+
+.card{
+    border-style: solid;
+    border-color: #A84DFF;
+    border-width: 3.5px;
+    padding: 10px;
+}
+
+/* Botoncito listo */
+.divlisto{
+    display: flex;
+    justify-content: end;
+}
+.btn.btn-secondary{
+    background-color: #A84DFF;
+    border-style: none;
+    font-family: 'Josefin Sans', sans-serif;
+    width: 30%;
+    font-size: 18px;
+}
+
+/* Opciones importancia - no les pude cambiar el alto */
+
+
+#urgente{
+    background: #F6A8A6;
+}
+
+#nocolgar{
+    background-color:#F4CDA6;
+}
+
+#esperar{
+    background-color:#F9F0C1;
+}
+
+#esperarmucho{
+    background-color: #C0ECCC;
+}
+/* ------- CSS FOOTER ------- */
 .plus-img{
     border: none;
     margin-top: 10px;
     background-color: transparent;
     float: left;
 }
-/*.plus{
-    display: flex;
-    justify-content: end;
-}*/
 
+.plus-img.active{
+    display: flex;
+}
+
+.plus-img.inactive{
+    display: none;
+}

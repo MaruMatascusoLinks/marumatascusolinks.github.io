@@ -35,6 +35,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <!----------- NAV ------------>
     <header>
         <nav>
             <div class="row">
@@ -42,17 +44,16 @@
                     <button class="menu"><img src="../images/reto3/menu-icon.png" alt="Menu"></button>
                 </div>
                 <div class="col-6">
-                    <ul class="list-group">
-                        <li class="list-group-item active" aria-current="true" class="titulo">Wanderlist</li>
-                    </ul> 
+                    <h1 class="titulo">Wanderlist</h1> 
                 </div>
                 <div class="col-3"></div>
             </div>
         </nav>
     </header>
-    <!----------- Pantalla Bienvenida ------------>
 
-    <section class="container-bienvenida">
+    <!----------- 1. Pantalla Bienvenida ----------->
+
+    <section class="container-bienvenida" id="container-bienvenida">
         <div class="row">
             <div class="col-3"></div>
             <div class="col-6" class="row-bienvenida">
@@ -63,7 +64,66 @@
         </div>
     </section>
 
-    <!----------- Footes ------------>
+    <!----------- 2. Listado de tareas  ----------->
+        <section class="container-input" id="container-input">
+            <div class="row">
+                <div class="col-4"></div>
+                <div class="col-4">
+                    <br><br><br>
+                    <ul class="list-group" id="ul-input">
+                        <li class="list-group-item active" aria-current="true">Para hacer</li>
+                    </ul>
+                    <br><br><br>
+                    <button type="button" class="btn btn-primary" id="add">Nueva tarea</button>
+                </div>
+                <div class="col-4"></div>
+            </div>
+        </section> 
+
+
+    <!----------- 3. Agregar tareas ----------->
+    <section class="container-newtask" id="container-newtask">
+        <div class="row">
+            <div class="col-4"></div>
+            <div class="col-4">
+                <div class="card">
+                    <div class="form-floating">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                        <label for="floatingTextarea">Tarea</label>
+                    </div>
+                    <br>
+                    <div class="form-floating">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                        <label for="floatingTextarea2">Detalles</label>
+                    </div>
+                    <br>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Categoría</option>
+                        <option value="1">Personal</option>
+                        <option value="2">Trabajo</option>
+                        <option value="3">Casa</option>
+                        <option value="4">Entretenimiento</option>
+                    </select>
+                    <br>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Importancia</option>
+                        <option value="1" id="urgente" >Urgente!</option>
+                        <option value="2" id="nocolgar">No colgar</option>
+                        <option value="3" id="esperar">Puede esperar</option>
+                        <option value="4" id="esperarmucho">Este año o el que viene</option>
+                    </select>
+                    <br>
+                    <div class="divlisto"><button type="button" class="btn btn-secondary" id="listo">Listo!</button></div>
+                    
+                </div>
+            </div>
+            <div class="col-4"></div>
+        </div>
+
+    </section> 
+
+
+    <!----------- Footer ----------->
     <footer>
         <section>
             <div class="row">
@@ -72,29 +132,12 @@
                 <div class="col-6" >
                     
                 </div>
-                <div class="col-4" class="plus">
-                    <button class="plus-img"><img  src="../images/reto3/plus-icon.png" alt="Nueva tarea"></button>
+                <div class="col-4" class="plus" >
+                    <button class="plus-img" id="plus-img"><img id="nuevatarea" src="../images/reto3/plus-icon.png" alt="Nueva tarea"></button>
                 </div>
             </div>
         </section>
     </footer>
-    
-
-    <!-- Pantalla 2
-        <section class="container">
-            <div class="row">
-                <div class="col-4"></div>
-                <div class="col-4">
-                    <br><br><br>
-                    <ul class="list-group" id="container">
-                        <li class="list-group-item active" aria-current="true" class="titulo">Wanderlist</li>
-                    </ul>
-                    <br><br><br>
-                    <button type="button" class="btn btn-primary" id="add">Add</button>
-                </div>
-                <div class="col-4"></div>
-            </div>
-        </section> -->
 
     <script type="text/javascript" src="../js/todolist.js"></script>
     </body>
