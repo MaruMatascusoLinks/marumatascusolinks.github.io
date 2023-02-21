@@ -25,26 +25,50 @@ nav{
 
 .menu{
     border: none;
-    margin-top: 10px;
+    margin-top: 12px;
     background-color: transparent;
     padding-left: 20px;
     float: right;
 }
 
+.barra-inicio{
+display: flex;
+align-items: center;
+flex-wrap: wrap;
+padding: 10px;
+border-style: solid;
+border-radius: 10px;
+border-color: #A84DFF;
+color: #A84DFF;
+border-width: 3.5px;
+}
+
 .titulo{
+    display: inline-block;
+    font-size: 22px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: white;
+}
+
+.barra-inicio{
     background-color: white;
     padding: 10px;
     border-style: solid;
     border-radius: 10px;
     border-color: #A84DFF;
     color: #A84DFF;
-    font-size: 20px;
     border-width: 3.5px;
-    text-align: center;
-    display: block;
-    margin:0 auto;
 }
+.varita{
+    width: 25px;
+    height: 25px;
 
+}
+.varita2{
+    width: 25px;
+    height: 25px;
+}
 /* ------------ CSS BIENVENIDA ----------- */
 .bienvenida{
     display: block;
@@ -72,8 +96,8 @@ nav{
 /* ------------ CSS TASK LIST ----------- */
 
 .container-input{
-    display: none;
     height: 60vh;
+    display: block;
 }
 
 /*.container-input.active{
@@ -106,17 +130,20 @@ nav{
 /* ------------ CSS NEW TASK ----------- */
 
 .container-newtask{
-    display: none;
-    height: 60vh;
+    display: block;
 }
 
-.container-newtask.active{
+.hidden{
+    display: none;
+}
+
+/*.container-newtask.active{
     display: block;
 }
 
 .container-newtask.inactive{
     display: none;
-}
+}*/
 
 .card{
     border-style: solid;
@@ -134,7 +161,8 @@ nav{
     background-color: #A84DFF;
     border-style: none;
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 15px;
+    width: 30%;
+    font-size: 18px;
 }
 
 /* Opciones importancia - no les pude cambiar el alto */
