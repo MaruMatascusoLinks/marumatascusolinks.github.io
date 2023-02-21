@@ -13,23 +13,47 @@ let agregar = document.getElementById('nuevatarea').addEventListener('click', fu
 /* Clic en nueva tarea */
 
 let newtask = document.getElementById('container-newtask')
-let addBtn = document.getElementById('add').addEventListener('click', function(event){
-    event.preventDefault()
+let addBtn = document.getElementById('add').addEventListener('click', function(){
     newtask.classList.toggle('active')
     document.getElementById('container-input').style.display = 'none'
 })
 
 /* clic en listo */
 let listadito =  document.getElementById('ul-input')
-let txt = "acá debería agarrar el input de tarea"
+let txt = "hola"
 
-let listo = document.getElementById('listo').addEventListener('click', function(event){
-    event.preventDefault()
+let listo = document.getElementById('listo').addEventListener('click', function(){
     newtask.classList.toggle('inactive')
     document.getElementById('container-input').style.display = 'block'
-    let modelo = `<li class="list-group-item active" aria-current="true">${txt}</li>`
+    let modelo = `<li class="list-group-item" aria-current="true">${txt}</li>`
     listadito.innerHTML += modelo
 })
 
 
+/*let input = document.querySelector('input')
+let btn = document.querySelector('button')
+let ul = document.querySelector('ul')
+let empty = document.querySelector('.empty')
+
+btn.addEventListener("click", function(e){
+    e.preventDefault()
+
+    let task = input.value
+
+    if (task !== ""){
+
+        let li = document.createElement('li')
+        let p = document.createElement('p')
+        p.textContent = task
+
+        li.appendChild(p)
+        li.appendChild(taskDelete())
+        ul.appendChild(li)
+
+        input.value = ""
+        empty.style.display='none'
+    }
+
+
+})*/
 

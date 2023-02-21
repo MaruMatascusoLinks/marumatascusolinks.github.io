@@ -90,17 +90,24 @@ nav{
     font-size: 18px;
 }
 
+.list-group-item{
+    background-color: white;
+    border-style: solid;
+    border-color: grey;
+    font-size: 14px;
+}
 .btn.btn-primary{
     float: right;
     background-color: #A84DFF;
     border-style: none;
-    font-size: 18px;
+    font-size: 14px;
 }
 
 /* ------------ CSS NEW TASK ----------- */
 
 .container-newtask{
     display: none;
+    height: 60vh;
 }
 
 .container-newtask.active{
@@ -127,8 +134,7 @@ nav{
     background-color: #A84DFF;
     border-style: none;
     font-family: 'Josefin Sans', sans-serif;
-    width: 30%;
-    font-size: 18px;
+    font-size: 15px;
 }
 
 /* Opciones importancia - no les pude cambiar el alto */

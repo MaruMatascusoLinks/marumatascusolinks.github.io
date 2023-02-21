@@ -67,8 +67,8 @@
     <!----------- 2. Listado de tareas  ----------->
         <section class="container-input" id="container-input">
             <div class="row">
-                <div class="col-4"></div>
-                <div class="col-4">
+                <div class="col-3"></div>
+                <div class="col-6">
                     <br><br><br>
                     <ul class="list-group" id="ul-input">
                         <li class="list-group-item active" aria-current="true">Para hacer</li>
@@ -76,24 +76,24 @@
                     <br><br><br>
                     <button type="button" class="btn btn-primary" id="add">Nueva tarea</button>
                 </div>
-                <div class="col-4"></div>
+                <div class="col-3"></div>
             </div>
         </section> 
 
 
-    <!----------- 3. Agregar tareas ----------->
+    <!----------- 3. Container para agregar tareas ----------->
     <section class="container-newtask" id="container-newtask">
         <div class="row">
-            <div class="col-4"></div>
-            <div class="col-4">
+            <div class="col-2"></div>
+            <div class="col-8">
                 <div class="card">
-                    <div class="form-floating">
-                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
-                        <label for="floatingTextarea">Tarea</label>
+                    <div class="form-floating mb-3">
+                        <input type="text" id="floatingInput" class="form-control"  placeholder="Tarea">
+                        <label for="floatingInput">Tarea</label>
                     </div>
                     <br>
                     <div class="form-floating">
-                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 80px"></textarea>
                         <label for="floatingTextarea2">Detalles</label>
                     </div>
                     <br>
@@ -117,7 +117,7 @@
                     
                 </div>
             </div>
-            <div class="col-4"></div>
+            <div class="col-2"></div>
         </div>
 
     </section> 
