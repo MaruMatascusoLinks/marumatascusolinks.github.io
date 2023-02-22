@@ -2,6 +2,7 @@
 /*const dom = document.getElementById('html')*/
 const bienvenida = document.getElementById('container-bienvenida')
 const newtask = document.getElementById('container-newtask')
+const addtask = document.getElementById('add')
 const plus  = document.getElementById('plus-img')
 const listadito =  document.getElementById('ul-input')
 const listo = document.getElementById('listo')
@@ -14,10 +15,10 @@ const barmenu = document.getElementById('menuinicio')
 plus.addEventListener('click', taskInput)
 listo.addEventListener('click', agregarTarea)
 barmenu.addEventListener('click', menuInicio)
-
+addtask.addEventListener('click', addTask)
 /* Abrir Menu Inicio */
 function menuInicio(){
-    dropdown1.classList.toggle('active')
+dropdown1.classList.toggle('active')
 }
 
 /* Abrir Task Input */
@@ -41,12 +42,22 @@ function agregarTarea(){
         
         newtask.classList.add('hidden');
         pendientes.classList.remove('hidden');
-        let modelo = `<li class="list-group-item" aria-current="true">${input}</li>`
-        let li = document.createElement(modelo)
+        /*let modelo = (`<li class="list-group-item" aria-current="true">${input}</li>`)*/
+        let li = document.createElement('li')
         listadito.innerHTML += li;
         
     }   
 }
+
+function addTask(){
+    if (newtask.classList.contains('hidden')){
+        newtask.classList.remove('hidden');
+        pendientes.classList.add('hidden');
+        }
+}
+
+
+
         /*plus.classList.add('active');
         bienvenida.classList.add('active');
 
