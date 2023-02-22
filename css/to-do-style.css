@@ -29,6 +29,32 @@ nav{
     background-color: transparent;
     padding-left: 20px;
     float: right;
+    height: fit-content;
+}
+
+.dropdown-menu{
+    display: none;
+    font-size: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #A84DFF;
+    position: relative;
+    margin-left: 40px;
+    margin-top: 10px;   
+    padding: 12px;
+    width: 100px;
+    height: 90px;
+    background-color: white;
+    justify-content: space-between;
+    --bs-dropdown-item-padding-x: 0.5rem;
+    --bs-dropdown-item-padding-y: 0rem;
+    --bs-dropdown-link-color: var(--bs-body-color);
+    --bs-dropdown-link-hover-color: var(--bs-body-color);
+    --bs-dropdown-link-hover-bg: #CCA9FF ;
+}
+
+
+.dropdown-menu.active{
+    display: block;
 }
 
 .barra-inicio{
@@ -45,7 +71,7 @@ border-width: 3.5px;
 
 .titulo{
     display: inline-block;
-    font-size: 22px;
+    font-size: 20px;
     text-align: center;
     margin: 0 auto;
     background-color: white;
@@ -61,14 +87,11 @@ border-width: 3.5px;
     border-width: 3.5px;
 }
 .varita{
-    width: 25px;
-    height: 25px;
+    width: 21px;
+    height: 21px;
 
 }
-.varita2{
-    width: 25px;
-    height: 25px;
-}
+
 /* ------------ CSS BIENVENIDA ----------- */
 .bienvenida{
     display: block;
@@ -99,6 +122,8 @@ border-width: 3.5px;
     height: 60vh;
     display: block;
 }
+
+
 
 /*.container-input.active{
     display: block;
@@ -161,7 +186,6 @@ border-width: 3.5px;
     background-color: #A84DFF;
     border-style: none;
     font-family: 'Josefin Sans', sans-serif;
-    width: 30%;
     font-size: 18px;
 }
 

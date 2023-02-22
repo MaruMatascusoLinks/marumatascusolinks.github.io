@@ -7,11 +7,18 @@ const listadito =  document.getElementById('ul-input')
 const listo = document.getElementById('listo')
 const input = document.getElementById('taskinput') 
 const pendientes = document.getElementById('container-input')
-
+const dropdown1 = document.getElementById('dropdown1')
+const barmenu = document.getElementById('menuinicio')
 
 /* Eventos  */
 plus.addEventListener('click', taskInput)
 listo.addEventListener('click', agregarTarea)
+barmenu.addEventListener('click', menuInicio)
+
+/* Abrir Menu Inicio */
+function menuInicio(){
+    dropdown1.classList.toggle('active')
+}
 
 /* Abrir Task Input */
 
