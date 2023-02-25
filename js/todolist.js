@@ -1,6 +1,6 @@
 
 /*const dom = document.getElementById('html')*/
-const bienvenida = document.getElementById('container-bienvenida')
+const bienvenida = document.getElementById('container-bienvenida') 
 const newtask = document.getElementById('container-newtask')
 const addtask = document.getElementById('add')
 const plus  = document.getElementById('plus-img')
@@ -16,6 +16,7 @@ plus.addEventListener('click', taskInput)
 listo.addEventListener('click', agregarTarea)
 barmenu.addEventListener('click', menuInicio)
 addtask.addEventListener('click', addTask)
+
 /* Abrir Menu Inicio */
 function menuInicio(){
 dropdown1.classList.toggle('active')
@@ -38,13 +39,11 @@ function taskInput(){
 /* Agregar tarea al listado si el input es distinto a "", que me cree un li y lo agregue al listado */
 
 function agregarTarea(){
-    if (input!==""){
-        
+    if (input !==""){
         newtask.classList.add('hidden');
         pendientes.classList.remove('hidden');
-        /*let modelo = (`<li class="list-group-item" aria-current="true">${input}</li>`)*/
-        let li = document.createElement('li')
-        listadito.innerHTML += li;
+        let modelo = `<li class="list-group-item" aria-current="true">${input.value}</li>`;
+        listadito.innerHTML += modelo;
         
     }   
 }

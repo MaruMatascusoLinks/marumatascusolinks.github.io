@@ -27,47 +27,47 @@
     <!-- Autora -->
     <meta name="author" content="Mariana Valeria Matascuso" />
     <meta name="copyright" content="Dev - Propietaria del copyright" />
-
     <!-- CSS + Fonts -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/to-do-style.css">
-    <link rel="shortcut icon" href="../images/reto1/colorida.png" type="image/png">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/to-do-style.css">
+
+    <!-- Shortcut Icon -->
+    <link 
+    rel="shortcut icon" 
+    href="../images/reto1/colorida.png" 
+    type="image/png"
+    />
 </head>
 <body>
 
     <!----------- NAV ------------>
-    <header>
-        <nav>
-            <div class="row">
-                <div class="col-3">
-                    <button class="menu" ><img id="menuinicio" src="../images/reto3/menu-icon.png" alt="Menu"></button>
-                </div>
-                    
-                <div   class="col-6" >
-                    <span class="barra-inicio">
-                    <img class="varita" src="../images/reto3/varita.png" alt="">
+    <div class="container-header">
+        <header class="header">
+            <nav class="nav">
+                <button class="menu" ><img class="bar-img" src="../images/reto3/menu-icon.svg" alt="Menu"></button>
+                <span class="deco-titulo">
+                    <img class="varita" src="../images/reto3/varita.png" alt="logo-varita">
                     <h1 class="titulo">Wanderlist</h1> 
-                    <img class="varita" src="../images/reto3/varita.png" alt="">
-                    </span>
-                </div>
-                <div class="col-3"></div>
-            </div>
-            <div>
-                <div class="row">
-                    <div class="col-4">
-                        <ul class="dropdown-menu" id="dropdown1">
-                            <li><button class="dropdown-item" type="button">Mi actividad</button></li>
-                            <li><button class="dropdown-item" type="button">Descargables</button></li>
-                            <li><button class="dropdown-item" type="button">Tiendita</button></li>
-                        </ul>
-                    </div>
-                    <div class="col-8"></div>
-                </div>
-            </div>
-
-        </nav>
-    </header>
+                    <img class="varita" src="../images/reto3/varita.png" alt="logo-varita">
+                </span>
+                <button class="user" ><img class="bar-img" src="../images/reto3/user-icon.svg" alt="User"></button>
+            </nav>
+        </header>
+    </div>
+<!----------- hamburguesita 
+    <div class="row">
+        <div class="col-4">
+            <ul class="dropdown-menu" id="dropdown1">
+                <li><button class="dropdown-item" type="button">Mi actividad</button></li>
+                <li><button class="dropdown-item" type="button">Descargables</button></li>
+                <li><button class="dropdown-item" type="button">Tiendita</button></li>
+            </ul>
+        </div>
+        <div class="col-8"></div>
+    </div>
+</div> ----------->
+    
 
     <!----------- 1. Pantalla Bienvenida ----------->
 
@@ -75,8 +75,8 @@
         <div class="row">
             <div class="col-3"></div>
             <div class="col-6" class="row-bienvenida">
-                <img class="bienvenida" src="../images/reto3/bienvenida.png" alt="Bienvenida">
-                <p class="msj-bienvenida">Hola Joni! Te debo el responsive jaja, pero le puse todo el cariñito. Gracias y larga vida a JS, amén!</p>
+                <img class="bienvenida" src="../images/reto3/bienvenida.svg" alt="Bienvenida">
+                <p class="msj-bienvenida">Hola! Vamos a organizarnos!</p>
             </div>
             <div class="col-3"></div>
         </div>
@@ -150,7 +150,9 @@
                     
                 </div>
                 <div class="col-4" class="plus" >
-                    <button class="plus-img" id="plus-img"><img id="nuevatarea" src="../images/reto3/plus-icon.png" alt="Nueva tarea"></button>
+                    <button class="plus-img" id="plus-img"><svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.5 10.75V28.25M10.75 19.5H28.25M19.5 37C9.83502 37 2 29.165 2 19.5C2 9.83502 9.83502 2 19.5 2C29.165 2 37 9.83502 37 19.5C37 29.165 29.165 37 19.5 37Z" stroke="#A84DFF" stroke-width="3.41143"/>
+                        </svg></button>
                 </div>
             </div>
         </section>

@@ -4,34 +4,73 @@ Color tipografía e íconos: #A84DFF
 Color 
 */
 
-body{
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 12px;
+    font-size: 12px;   
 }
 
-header{
-    height: 20vh;
-    
-}
-
-footer{
-    height: 20vh;
-    
-}
 /* --------- NAV ------------ */
-nav{
-    margin-top: 50px;    
+.container-header{
+    background-color:  #fabe2c;
 }
+
+.nav{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
 
 .menu{
-    border: none;
-    margin-top: 12px;
-    background-color: transparent;
-    padding-left: 20px;
-    float: right;
-    height: fit-content;
-    
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
+    border: solid;
+    border-color: #A84DFF;
+    border-width: 3.5px;
 }
+
+.deco-titulo{
+    padding: 5px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #A84DFF;
+    color: #A84DFF;
+    border-width: 3.5px;
+    background-color: white;
+}
+    
+.titulo{
+        display: inline-block;
+        font-size: 20px;
+        text-align: center;
+        background-color: white;
+        margin-top: 10px;
+    }
+
+    .user{
+        background-color: white;
+        border-radius: 10px;
+        padding:5px;
+        border: solid;
+        border-color: #A84DFF;
+        border-width: 3.5px;
+        }
+
+    .bar-img{
+        height: 20px;
+        width: 20px;
+    }
+
+    .varita{
+        margin-top: -10px;
+        width: 20px;
+        height: 20px;
+    }
 
 .dropdown-menu{
     display: none;
@@ -58,40 +97,6 @@ nav{
     display: block;
 }
 
-.barra-inicio{
-display: flex;
-align-items: center;
-flex-wrap: wrap;
-padding: 10px;
-border-style: solid;
-border-radius: 10px;
-border-color: #A84DFF;
-color: #A84DFF;
-border-width: 3.5px;
-}
-
-.titulo{
-    display: inline-block;
-    font-size: 20px;
-    text-align: center;
-    margin: 0 auto;
-    background-color: white;
-}
-
-.barra-inicio{
-    background-color: white;
-    padding: 10px;
-    border-style: solid;
-    border-radius: 10px;
-    border-color: #A84DFF;
-    color: #A84DFF;
-    border-width: 3.5px;
-}
-.varita{
-    width: 21px;
-    height: 21px;
-
-}
 
 /* ------------ CSS BIENVENIDA ----------- */
 .bienvenida{
@@ -222,4 +227,10 @@ border-width: 3.5px;
 
 .plus-img.inactive{
     display: none;
+}
+
+
+footer{
+    height: 20vh;
+    
 }
