@@ -13,15 +13,15 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://marumatascusolinks.github.io/" />
-    <meta property="og:title" content="Los Links de Marian" />
+    <meta property="og:title" content="Wanderlist" />
     <meta property="og:description" content="Acá vas a encontrar links e información sobre Mariana Matascuso." />
     <meta property="og:image" content="marumatascusolinks.github.io/images/reto1/maruseria.png" />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="https://marumatascusolinks.github.io/" />
-    <meta property="twitter:title" content="Maru's Links" />
-    <meta property="twitter:description" content="Acá vas a encontrar links e información sobre Marianita Matascuso, que está aprendiendo a programar! Barrilete cósmico!" >
+    <meta property="twitter:title" content="Wanderlist" />
+    <meta property="twitter:description" content="Tremenda to do list hecha a mano y con amor!" >
     <meta property="twitter:image" content="marumatascusolinks.github.io/images/reto1/marutwitter.png" />
 
     <!-- Autora -->
@@ -45,119 +45,108 @@
     <div class="container-header">
         <header class="header">
             <nav class="nav">
-                <button class="menu" ><img class="bar-img" src="../images/reto3/menu-icon.svg" alt="Menu"></button>
+                <button class="menu" id="hamburguesita"><img class="bar-img"  src="../images/reto3/menu-icon.svg" alt="Menu"></button>
+                
+                <!----------- hamburguesita ----------->
+                <div class="dropdown-menu hidden" id="burger-div">
+                    <ul class="ul-dropdown">
+                        <li><button class="dropdown-item" type="button">Mi actividad</button></li>
+                        <li><button class="dropdown-item" type="button">Descargables</button></li>
+                        <li><button class="dropdown-item" type="button">Tiendita</button></li>
+                    </ul>
+                </div>
+                    
+
                 <span class="deco-titulo">
                     <img class="varita" src="../images/reto3/varita.png" alt="logo-varita">
                     <h1 class="titulo">Wanderlist</h1> 
                     <img class="varita" src="../images/reto3/varita.png" alt="logo-varita">
                 </span>
-                <button class="user" ><img class="bar-img" src="../images/reto3/user-icon.svg" alt="User"></button>
+                <button class="user"><img class="bar-img" src="../images/reto3/user-icon.svg" alt="User"></button>
             </nav>
         </header>
     </div>
-<!----------- hamburguesita 
-    <div class="row">
-        <div class="col-4">
-            <ul class="dropdown-menu" id="dropdown1">
-                <li><button class="dropdown-item" type="button">Mi actividad</button></li>
-                <li><button class="dropdown-item" type="button">Descargables</button></li>
-                <li><button class="dropdown-item" type="button">Tiendita</button></li>
-            </ul>
-        </div>
-        <div class="col-8"></div>
-    </div>
-</div> ----------->
-    
 
-    <!----------- 1. Pantalla Bienvenida ----------->
 
-    <section class="container-bienvenida" id="container-bienvenida">
-        <div class="row">
-            <div class="col-3"></div>
-            <div class="col-6" class="row-bienvenida">
+    <!----------- 1. Bienvenida ----------->
+        <div class="container-bienvenida" id="container-bienvenida">
                 <img class="bienvenida" src="../images/reto3/bienvenida.svg" alt="Bienvenida">
-                <p class="msj-bienvenida">Hola! Vamos a organizarnos!</p>
+                <h1 class="msj-bienvenida">Todo en orden, muy bien!</h1>
+        </div>
+
+    <!----------- Listado ----------->  
+        <div class="container-lista hidden" id="container-lista"></div>
+
+        <div class="container-lista-hije" id="container-lista-hije"></div>     
+            
+        </div>
+    
+    <!----------------------- Container para agregar tareas ------------------>
+        <div id="newtask-section" class="newtask-section">
+            <div class="newtask-deco">
+                <div class="newtask-container">
+                    <h1 class="nt-h1">Vamos a organizarnos!</h1>
+
+    <!----------- Nombre de tarea ----------->
+                    <div class="task-inputs">
+                        <input type="text" class="nt-input" id="nt-input" placeholder="Nombrá tu pendiente" name="">
+                    </div>
+
+    <!----------- Descripcion de tarea ----------->
+                    <div class="task-inputs">
+                        <textarea class="nt-description" id="nt-description" placeholder="Describí tu pendiente"name=""></textarea>
+                    </div>
+
+    <!----------- Tipo de tarea ----------->
+                    <div class="task-dropdown">
+                        <p class="category-p">Categoría</p>
+                        <form>
+                        <select class="category-menu" id="category-menu" name="categoría">
+                            <option value="Personal">Personal</option>
+                            <option value="Trabajo">Trabajo</option>
+                            <option value="Casa">Casa</option>
+                            <option value="Entretenimiento">Entretenimiento</option>
+                        </select>
+                        </form>
+                    </div>
+
+
+                    
+    <!----------- Colores ----------->
+                    <div class="task-dropdown">
+                        <p class="category-p">Prioridad</p>
+                        <div class="importance">
+                        <input class="fucsia" type="radio" name="color" id="cuadradito"
+                        />
+                        <input class="naranja" type="radio" name="color" id="cuadradito"
+                        />
+                        <input class="amarillo" type="radio" name="color" id="cuadradito"
+                        />
+                        <input class="verde" type="radio" name="color" id="cuadradito"
+                        />
+                        </div>
+                    </div>
+
+                    <!----------- Botones final ----------->  
+                    <div class="final-btns-div">
+                        <button id="salir" class="final-btns" class="salir">Salir</button>
+                        <button id="listo" class="final-btns" class="listo">Listo!</button>
+                    </div>
+                
+                </div>
             </div>
-            <div class="col-3"></div>
         </div>
     </section>
 
-    <!----------- 2. Listado de tareas  ----------->
-        <section class="container-input hidden" id="container-input">
-            <div class="row">
-                <div class="col-3"></div>
-                <div class="col-6">
-                    <br><br><br>
-                    <ul class="list-group" id="ul-input">
-                        <li class="list-group-item active" aria-current="true">Para hacer</li>
-                    </ul>
-                    <br><br><br>
-                    <button type="button" class="btn btn-primary" id="add">Nueva tarea</button>
-                </div>
-                <div class="col-3"></div>
-            </div>
-        </section> 
+<!----------- Footer ----------->
+<footer>       
+    <div class="plus" >
+        <button class="plus-img" id="plus-img"><img src="../images/reto3/plus-icon.svg" alt=""></button>
+    </div>
+</footer>
 
-
-    <!----------- 3. Container para agregar tareas ----------->
-    <section class="container-newtask hidden" id="container-newtask">
-        <div class="row">
-            <div class="col-2"></div>
-            <div class="col-8">
-                <div class="card">
-                    <div class="form-floating mb-3">
-                        <input type="text"  class="form-control" id="floatingInput" id="taskinput" placeholder="Tarea"> <label for="floatingInput">Tarea</label>
-                    </div>
-                    <br>
-                    <div class="form-floating">
-                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 80px"></textarea>
-                        <label for="floatingTextarea2">Detalles</label>
-                    </div>
-                    <br>
-                    <select class="form-select" aria-label="Default select example">
-                        <option selected>Categoría</option>
-                        <option value="1">Personal</option>
-                        <option value="2">Trabajo</option>
-                        <option value="3">Casa</option>
-                        <option value="4">Entretenimiento</option>
-                    </select>
-                    <br>
-                    <select class="form-select" aria-label="Default select example">
-                        <option selected>Importancia</option>
-                        <option value="1" id="urgente" >Urgente!</option>
-                        <option value="2" id="nocolgar">No colgar</option>
-                        <option value="3" id="esperar">Puede esperar</option>
-                        <option value="4" id="esperarmucho">Este año o el que viene</option>
-                    </select>
-                    <br>
-                    <div class="divlisto"><button type="button" class="btn btn-secondary" id="listo">Listo!</button></div>
-                    
-                </div>
-            </div>
-            <div class="col-2"></div>
-        </div>
-
-    </section> 
-
-
-    <!----------- Footer ----------->
-    <footer>
-        <section>
-            <div class="row">
-                <div class="col-2">
-                </div>
-                <div class="col-6" >
-                    
-                </div>
-                <div class="col-4" class="plus" >
-                    <button class="plus-img" id="plus-img"><svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M19.5 10.75V28.25M10.75 19.5H28.25M19.5 37C9.83502 37 2 29.165 2 19.5C2 9.83502 9.83502 2 19.5 2C29.165 2 37 9.83502 37 19.5C37 29.165 29.165 37 19.5 37Z" stroke="#A84DFF" stroke-width="3.41143"/>
-                        </svg></button>
-                </div>
-            </div>
-        </section>
-    </footer>
-
-    <script type="text/javascript" src="../js/todolist.js"></script>
-    </body>
+<script type="text/javascript" src="../js/main.js"></script>
+</body>
 </html>
+
+
